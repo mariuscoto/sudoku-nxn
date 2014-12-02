@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+
+filee = open('asdasd').readlines()
+filee = [line[:-1] for line in filee]
+
+f_o = open('file_out_py.in','w')
+
+for line in filee:
+    for letter in line:
+        if letter == '.':
+            f_o.write('0 ')
+        else
+            f_o.write(str(ord(letter)-64)+' ')
+    f_o.write('\n')
